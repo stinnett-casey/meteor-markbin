@@ -4,7 +4,6 @@ import 'codemirror/mode/markdown/markdown';
 
 export default class BinsEditor extends Component {
   onEditorChange(content){
-    console.log(content);
     Meteor.call('bins.update', this.props.bin, content);
   }
 
