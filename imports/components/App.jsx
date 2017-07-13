@@ -3,12 +3,10 @@ import Header from './Header';
 import BinsList from './bins/BinsList';
 import BinsMain from './bins/BinsMain';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import createBrowserHistory from 'history/createBrowserHistory';
-const history = createBrowserHistory();
 
 const App = (props) => {
   return (
-    <Router history={history}>
+    <Router>
       <div>
         <Header />
         <Switch>
